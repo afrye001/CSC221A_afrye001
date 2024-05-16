@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal List</title>
+</head>
+<body>
+    <h1>Meal List</h1>
+    <ul>
+        {% for meal in meals %}
+        <li>{{ meal.name }} - {{ meal.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
